@@ -1,0 +1,22 @@
+<BottomNavigation selectedIndex="1">
+
+    <!-- The bottom tab UI is created via TabStrip (the containier) and TabStripItem (for each tab)-->
+    <TabStrip>
+        <TabStripItem>
+            <Label text="Browse"></Label>
+        </TabStripItem>
+
+        <TabStripItem>
+            <Label text="Search"></Label>
+        </TabStripItem>
+    </TabStrip>
+
+    <!-- The number of TabContentItem components should corespond to the number of TabStripItem components -->
+    <TabContentItem>
+        <page-router-outlet name="browse"></page-router-outlet>
+    </TabContentItem>
+    <TabContentItem>
+        <page-router-outlet  name="search"></page-router-outlet>
+    </TabContentItem>
+
+</BottomNavigation>
