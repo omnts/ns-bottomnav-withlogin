@@ -26,7 +26,7 @@ import { LoginComponent } from "./modules/login/pages/login.component";
     ],
     declarations: [
         AppComponent,
-        LoginComponent
+        //LoginComponent
     ],
     providers: [],
     schemas: [
