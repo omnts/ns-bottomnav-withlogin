@@ -7,6 +7,8 @@ const routes: Routes = [
   { path: "", redirectTo: "bottomnav", pathMatch: "full" },
   
   { path: "bottomnav", redirectTo: "/(browse:browse//search:search)", pathMatch: "full" },
+  
+  { path: "browse", component: NSEmptyOutletComponent, outlet: "browse", loadChildren: () => import('../browse/browse.module').then(m => m.BrowseModule)},
   //{ path: "browse", outlet: "browse", loadChildren: () => import('../browse/browse.module').then(m => m.BrowseModule)},
 
   { path: "search", component: NSEmptyOutletComponent, outlet: "search" , loadChildren: () => import('../search/search.module').then(m => m.SearchModule)},
