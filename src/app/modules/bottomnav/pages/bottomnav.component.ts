@@ -9,11 +9,13 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class BottomnavComponent implements OnInit {
 
-  constructor(private routerExtension: RouterExtensions,
-    private activeRoute: ActivatedRoute) { }
+  constructor(
+    private routerExtension: RouterExtensions,
+    private activeRoute: ActivatedRoute
+    ) { }
 
   ngOnInit() {
-    
+    console.log("ngOnInit BottomnavComponent");
   }
 
 }
