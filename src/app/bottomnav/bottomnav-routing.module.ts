@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes } from '@angular/router';
 import { NativeScriptRouterModule, NSEmptyOutletComponent } from 'nativescript-angular/router';
-import { BottomnavComponent } from './pages/bottomnav.component';
+import { BottomnavComponent } from './bottomnav.component';
 
 const routes: Routes = [
   //{ path: "", redirectTo: "bottomnav", pathMatch: "full" },
