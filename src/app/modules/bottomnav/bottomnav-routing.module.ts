@@ -4,9 +4,8 @@ import { NativeScriptRouterModule, NSEmptyOutletComponent } from 'nativescript-a
 import { BottomnavComponent } from './pages/bottomnav.component';
 
 const routes: Routes = [
-  { path: "", redirectTo: "bottomnav", pathMatch: "full" },
-  
-  { path: "bottomnav", redirectTo: "/(browse:browse//search:search)", pathMatch: "full" },
+  //{ path: "", redirectTo: "bottomnav", pathMatch: "full" },
+  //{ path: "bottomnav", redirectTo: "/(browse:browse//search:search)", pathMatch: "full" },
   
   { 
     path: "browse", 
