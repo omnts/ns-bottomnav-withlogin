@@ -3,11 +3,6 @@ import { NativeScriptModule } from "nativescript-angular/nativescript.module";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
-import { BottomnavModule } from "./bottomnav/bottomnav.module";
-import { BottomnavRoutingModule } from "./bottomnav/bottomnav-routing.module";
-import { LoginModule } from "./login/login.module";
-import { LoginComponent } from "./login/login.component";
-
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
 // import { NativeScriptFormsModule } from "nativescript-angular/forms";
@@ -26,7 +21,6 @@ import { LoginComponent } from "./login/login.component";
     ],
     declarations: [
         AppComponent,
-        //LoginComponent
     ],
     providers: [],
     schemas: [

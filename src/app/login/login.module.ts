@@ -5,7 +5,9 @@ import { NativeScriptCommonModule } from 'nativescript-angular/common';
 import { LoginComponent } from './login.component';
 
 @NgModule({
-  declarations: [LoginComponent],
+  declarations: [
+    LoginComponent
+  ],
   imports: [
     LoginRoutingModule,
     NativeScriptCommonModule

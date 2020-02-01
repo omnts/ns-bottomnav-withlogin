@@ -13,16 +13,16 @@ const routes: Routes = [
   
   { 
     path: "browse", 
-    component: BrowseComponent, 
+    component: NSEmptyOutletComponent, 
     outlet: "browse",
-    //loadChildren: () => import('../browse/browse.module').then(m => m.BrowseModule)
+    loadChildren: () => import('../browse/browse.module').then(m => m.BrowseModule)
   },
 
   { 
     path: "search", 
-    component: SearchComponent, 
+    component: NSEmptyOutletComponent, 
     outlet: "search" ,
-    //loadChildren: () => import('../search/search.module').then(m => m.SearchModule)
+    loadChildren: () => import('../search/search.module').then(m => m.SearchModule)
   },
 
 ];
@@ -36,7 +36,7 @@ const routes: Routes = [
   imports: [
     NativeScriptCommonModule,
     NativeScriptRouterModule,
-    NativeScriptRouterModule.forChild([{path: "default", component: BottomnavComponent, children: routes}]),],
+    NativeScriptRouterModule.forChild([{path: "", component: BottomnavComponent, children: routes}]),],
     //exports: [NativeScriptRouterModule]
 })
 export class BottomnavRoutingModule { }
