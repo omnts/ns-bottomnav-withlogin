@@ -7,8 +7,8 @@ const routes: Routes = [
     { path: "", redirectTo: "/login", pathMatch: "full" },
     //{ path: "", redirectTo: "/bottomnav", pathMatch: "full" },
 
-    //{ path: "login", component: LoginComponent},
-    { path: "login", loadChildren: () => import('./login/login.module').then(m => m.LoginModule)},
+    { path: "login", component: LoginComponent},
+    //{ path: "login", loadChildren: () => import('./login/login.module').then(m => m.LoginModule)},
 
     { path: "bottomnav", loadChildren: () => import('./bottomnav/bottomnav.module').then(m => m.BottomnavModule)},
 ];
