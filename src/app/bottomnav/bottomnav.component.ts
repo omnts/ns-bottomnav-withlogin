@@ -3,6 +3,7 @@ import { RouterExtensions } from 'nativescript-angular/router';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
+  moduleId: module.id,
   selector: 'ns-bottomnav',
   templateUrl: './bottomnav.component.html',
   styleUrls: ['./bottomnav.component.css']

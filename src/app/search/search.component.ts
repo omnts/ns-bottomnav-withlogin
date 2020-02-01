@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
+  moduleId: module.id,
   selector: 'ns-search',
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.css']
