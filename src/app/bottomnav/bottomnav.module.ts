@@ -8,7 +8,9 @@ import { NativeScriptRouterModule } from 'nativescript-angular/router';
 
 @NgModule({
   
-  declarations: [BottomnavComponent],
+  declarations: [
+    BottomnavComponent,
+  ],
   imports: [
     BottomnavRoutingModule,
     NativeScriptCommonModule,
