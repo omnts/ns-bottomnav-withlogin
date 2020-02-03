@@ -2,10 +2,6 @@ import { NgModule } from '@angular/core';
 import { Routes } from '@angular/router';
 import { NativeScriptRouterModule, NSEmptyOutletComponent } from 'nativescript-angular/router';
 import { BottomnavComponent } from './bottomnav.component';
-import { NativeScriptCommonModule } from 'nativescript-angular/common';
-import { BrowseComponent } from '../browse/browse.component';
-import { SearchModule } from '../search/search.module';
-import { SearchComponent } from '../search/search.component';
 
 const routes: Routes = [
   //{ path: "", redirectTo: "bottomnav", pathMatch: "full" },
@@ -28,15 +24,8 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  
-  declarations: [
-    SearchComponent,
-    BrowseComponent,
-  ],
   imports: [
-    NativeScriptCommonModule,
-    NativeScriptRouterModule,
-    NativeScriptRouterModule.forChild([{path: "", component: BottomnavComponent, children: routes}]),
+    NativeScriptRouterModule.forChild([{path: "default", component: BottomnavComponent, children: routes}]),
   ],
   exports: [
     NativeScriptRouterModule,

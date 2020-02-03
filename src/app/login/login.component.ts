@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   moduleId: module.id,
-  selector: 'ns-login',
+  selector: 'Login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
