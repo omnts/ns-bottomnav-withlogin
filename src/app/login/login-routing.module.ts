@@ -4,15 +4,11 @@ import { NativeScriptRouterModule } from 'nativescript-angular/router';
 import { LoginComponent } from './login.component';
 
 const routes: Routes = [
-  { path: "", component: LoginComponent, pathMatch: "full" }
+    { path: "", component: LoginComponent, pathMatch: "full" }
 ];
 
 @NgModule({
-  imports: [
-    NativeScriptRouterModule.forChild(routes),
-  ],
-  exports: [
-    NativeScriptRouterModule,
-  ],
+    imports: [NativeScriptRouterModule.forChild(routes)],
+    exports: [NativeScriptRouterModule]
 })
 export class LoginRoutingModule { }
