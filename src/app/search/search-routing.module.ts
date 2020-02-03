@@ -11,10 +11,11 @@ const searchChildrens: Routes = [
 @NgModule({
   imports: [
     NativeScriptRouterModule,
-    NativeScriptRouterModule.forChild(searchChildrens)
+    NativeScriptRouterModule.forChild(searchChildrens),
   ],
-
-  exports: [NativeScriptRouterModule]
+  exports: [
+    NativeScriptRouterModule,
+  ],
 })
 
 export class SearchRoutingModule { }

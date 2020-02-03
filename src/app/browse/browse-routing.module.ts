@@ -11,10 +11,11 @@ const browseChildrens: Routes = [
 @NgModule({
   imports: [
     NativeScriptRouterModule,
-    NativeScriptRouterModule.forChild(browseChildrens)
+    NativeScriptRouterModule.forChild(browseChildrens),
   ],
-
-  exports: [NativeScriptRouterModule]
+  exports: [
+    NativeScriptRouterModule,
+  ],
 })
 
 export class BrowseRoutingModule { }

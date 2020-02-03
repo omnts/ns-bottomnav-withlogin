@@ -8,7 +8,11 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [NativeScriptRouterModule.forChild(routes)],
-  exports: [NativeScriptRouterModule]
+  imports: [
+    NativeScriptRouterModule.forChild(routes),
+  ],
+  exports: [
+    NativeScriptRouterModule,
+  ],
 })
 export class LoginRoutingModule { }

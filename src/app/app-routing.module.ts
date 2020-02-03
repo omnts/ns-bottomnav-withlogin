@@ -11,11 +11,11 @@ const routes: Routes = [
 ];
 
 @NgModule({
-    declarations: [],
-
     imports: [
         NativeScriptRouterModule.forRoot(routes, { enableTracing: true })
     ],
-    exports: [NativeScriptRouterModule]
+    exports: [
+        NativeScriptRouterModule,
+    ],
 })
 export class AppRoutingModule { }

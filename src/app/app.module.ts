@@ -6,6 +6,7 @@ import { AppComponent } from "./app.component";
 import { BottomnavModule } from "./bottomnav/bottomnav.module";
 import { BottomnavComponent } from "./bottomnav/bottomnav.component";
 import { BottomnavRoutingModule } from "./bottomnav/bottomnav-routing.module";
+import { LoginModule } from "./login/login.module";
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
 // import { NativeScriptFormsModule } from "nativescript-angular/forms";
@@ -18,14 +19,11 @@ import { BottomnavRoutingModule } from "./bottomnav/bottomnav-routing.module";
         AppComponent
     ],
     imports: [
-        BottomnavRoutingModule,
         NativeScriptModule,
-        BottomnavModule,
         AppRoutingModule
     ],
     declarations: [
         AppComponent,
-        //BottomnavComponent,
     ],
     providers: [],
     schemas: [

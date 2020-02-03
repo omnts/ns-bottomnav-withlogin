@@ -31,12 +31,16 @@ const routes: Routes = [
   
   declarations: [
     SearchComponent,
-    BrowseComponent
+    BrowseComponent,
   ],
   imports: [
     NativeScriptCommonModule,
     NativeScriptRouterModule,
-    NativeScriptRouterModule.forChild([{path: "", component: BottomnavComponent, children: routes}]),],
-    //exports: [NativeScriptRouterModule]
-})
+    NativeScriptRouterModule.forChild([{path: "", component: BottomnavComponent, children: routes}]),
+  ],
+  exports: [
+    NativeScriptRouterModule,
+  ],
+
+  })
 export class BottomnavRoutingModule { }
